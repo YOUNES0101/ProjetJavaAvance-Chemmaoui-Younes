@@ -28,35 +28,5 @@ Développer une application Java haute performance simulant un **Pare-feu (Firew
 
 ### Diagramme de Classes (Conceptuel)
 Voici la structure logique des composants principaux du simulateur :
+<img width="992" height="751" alt="uml" src="https://github.com/user-attachments/assets/faaedab3-6e22-449a-977a-76e8bf8fcc50" />
 
-```mermaid
-classDiagram
-    class Packet {
-        -String sourceIP
-        -String destIP
-        -int port
-        -String protocol
-        +toString()
-    }
-
-    class Rule {
-        -String ipPattern
-        -int port
-        -Action action
-        +matches(Packet p) boolean
-    }
-
-    class Firewall {
-        -List~Rule~ rules
-        +addRule(Rule r)
-        +process(Packet p)
-    }
-
-    class NetworkSimulator {
-        +generateTraffic()
-        +startStream()
-    }
-
-    Firewall "1" o-- "*" Rule : contient
-    Firewall ..> Packet : analyse
-    NetworkSimulator ..> Firewall : envoie du trafic
