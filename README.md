@@ -28,5 +28,6 @@ Développer une application Java haute performance simulant un **Pare-feu (Firew
 
 ### Diagramme de Classes (Conceptuel)
 Voici la structure logique des composants principaux du simulateur :
-<img width="992" height="751" alt="uml" src="https://github.com/user-attachments/assets/faaedab3-6e22-449a-977a-76e8bf8fcc50" />
+<!-- <img width="992" height="751" alt="uml" src="https://github.com/user-attachments/assets/faaedab3-6e22-449a-977a-76e8bf8fcc50" /> -->
+<img width="1038" height="740" alt="uml1" src="https://github.com/user-attachments/assets/a2173b36-5562-4a43-9d41-4d6833d2b41d" />
 
